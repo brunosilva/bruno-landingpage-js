@@ -1,0 +1,49 @@
+/*------------------------------ body */
+body{
+    margin: 0;
+}
+
+/*------------------------------ header */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    width: 200px;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.header .logo img{
+    width: auto;
+    max-height: 100px;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu .listMenu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu .listMenu a{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.header .menu .listMenu a li{
+    list-style: none;
+}
+
+
+
+/*------------------------------ fullbanner */
+.fullbanner img{
+    width: 100%;;
+}
