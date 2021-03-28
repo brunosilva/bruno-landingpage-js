@@ -139,9 +139,6 @@ for(var i = 0; i < itensInsta.length; i++){
     item.appendChild(imgCarousel);
     divItem.appendChild(item);
 }
-
-
-//divCarousel.appendChild(listCarousel);
 //---------------------------------------------END CAROUSEL
 
 
