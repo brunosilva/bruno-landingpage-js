@@ -120,16 +120,9 @@ divRules.appendChild(rulesContainer);
 
 
 //---------------------------------------------START CAROUSEL
-divCarousel = newElement("divCarousel","imagens-insta","section");
-divBoxCarousel = newElement("divBoxCarousel","","div");
-divBoxCarousel.setAttribute("id", "carousel-container");
-divCarouselItem = newElement("divCarouselItem","carousel-wrapper","div");
-divItem = newElement("divItem","carousel","div");
-
-divCarouselItem.appendChild(divItem);
-divBoxCarousel.appendChild(divCarouselItem);
-divCarousel.appendChild(divBoxCarousel);
-
+divSectionInsta = newElement("divSectionInsta","imagens-insta","section");
+divContainer = newElement("divContainer","container","div");
+divCarousel = newElement("divCarousel","carousel","div");
 
 for(var i = 0; i < itensInsta.length; i++){
     item = newElement("item","","div");
@@ -137,12 +130,14 @@ for(var i = 0; i < itensInsta.length; i++){
     imgCarousel.setAttribute("src", itensInsta[i]);
 
     item.appendChild(imgCarousel);
-    divItem.appendChild(item);
+    divCarousel.appendChild(item);
+    divContainer.appendChild(divCarousel);
 }
+divSectionInsta.appendChild(divContainer);
 //---------------------------------------------END CAROUSEL
 
 
 body.appendChild(header);
 body.appendChild(divFullbanner);
 body.appendChild(divRules);
-body.appendChild(divCarousel);
+body.appendChild(divSectionInsta);

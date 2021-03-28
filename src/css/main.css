@@ -204,8 +204,40 @@ body{
     color: #000000;
 }
 
-.imagens-insta .carousel-wrapper .carousel{
+/*------------------------------ imagens-insta - slick */
+.imagens-insta {
+    padding: 0 0 50px 0;
+}
+
+.container .carousel .slick-list .slick-slide div div{
+    display: flex !important;
+    justify-content: center;
+}
+
+.container .carousel .slick-prev, .container .carousel .slick-next{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
     padding: 0;
-    display: flex;
-    margin-bottom: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: black;
+    border-radius: 50%;
+}
+
+.container .carousel .slick-prev:before, .container .carousel .slick-next:before{
+    line-height: 5px !important;
+}
+
+.container .carousel .slick-dots li button:before{
+    font-size: 20px !important;
 }
