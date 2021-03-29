@@ -1,7 +1,7 @@
 const body = document.getElementById("body");
 
 //data
-const itensMenu = ['download', 'contact'];
+const itensMenu = ['download'];
 const iconsRules = [
     {icon: 'src/img/landing-page/ghost.gif', text: 'Truques de stories'},
     {icon: 'src/img/landing-page/lightning.gif', text: 'Novos filtros e fontes'},
@@ -10,7 +10,10 @@ const iconsRules = [
 ];
 const itensInsta = ['src/img/carousel/insta-1.png', 'src/img/carousel/insta-2.png', 'src/img/carousel/insta-3.png', 'src/img/carousel/insta-4.png', 
                     'src/img/carousel/insta-5.png', 'src/img/carousel/insta-6.png', 'src/img/carousel/insta-7.png'];
-
+const socialMedia = [
+    {icon: 'fab fa-instagram-square', text: '@9stormdigital'},
+    {icon: 'fab fa-facebook-square', text: '/9stormdigital'}
+];
 //function create element
 function newElement(name, className, tipo){
     name = document.createElement(tipo);
@@ -22,6 +25,7 @@ function newElement(name, className, tipo){
 //---------------------------------------------START HEADER
 //create element header
 header = newElement("header","header","header");
+headerContainer = newElement("headerContainer","container","div");
 
 //create element Logo
 logo = newElement("logo","logo","div");
@@ -53,8 +57,9 @@ for(var i = 0; i < itensMenu.length; i++){
 
 menu.appendChild(listMenu);
 logo.appendChild(imgLogo);
-header.appendChild(logo);
-header.appendChild(menu);
+headerContainer.appendChild(logo);
+headerContainer.appendChild(menu);
+header.appendChild(headerContainer);
 //---------------------------------------------END HEADER
 
 
@@ -171,6 +176,39 @@ divStartLearning.appendChild(divContainer);
 //---------------------------------------------END LEARNING
 
 
+//---------------------------------------------START FOOTER
+divFooter = newElement("divFooter","footer","footer");
+footerContainer = newElement("footerContainer","container","div");
+
+divNameRights = newElement("divNameRights","name-rights","div");
+divTxtName = newElement("divTxtName","name","p");
+divTxtName.innerHTML = "© 2020 9Storm. All rights reserved.";
+divNameRights.appendChild(divTxtName);
+
+divSocialMedia = newElement("divSocialMedia","social-media","div");
+
+for(var i = 0; i < socialMedia.length; i++){
+    divItemSocialFooter = newElement("divItemSocialFooter","item-footer","div");
+    iconSocial = newElement("iconSocial",socialMedia[i].icon,"i");
+
+    spanSocialName = newElement("spanSocialName","social-name","span")
+    spanSocialName.innerHTML = socialMedia[i].text;
+
+    divItemSocialFooter.appendChild(iconSocial);
+    divItemSocialFooter.appendChild(spanSocialName);
+
+    divSocialMedia.appendChild(divItemSocialFooter);
+}
+
+imgLogoFooter = newElement("imgLogoFooter","logo-footer","img")
+imgLogoFooter.src = "src/img/9storm-v2.png";
+divSocialMedia.appendChild(imgLogoFooter    );
+
+footerContainer.appendChild(divNameRights);
+footerContainer.appendChild(divSocialMedia);
+divFooter.appendChild(footerContainer);
+//---------------------------------------------END FOOTER
+
 
 body.appendChild(header);
 body.appendChild(divFullbanner);
@@ -178,3 +216,4 @@ body.appendChild(divRules);
 body.appendChild(divSectionInsta);
 body.appendChild(divProducts);
 body.appendChild(divStartLearning);
+body.appendChild(divFooter);
