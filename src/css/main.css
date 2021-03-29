@@ -14,65 +14,6 @@ body{
 }
 
 /*------------------------------ header */
-.header .container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.header .logo{
-    width: 200px;
-    max-height: 100px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.header .logo img{
-    width: auto;
-    max-height: 100px;
-}
-
-.header .menu {
-    display: flex;
-    align-items: center;
-}
-
-.header .menu .listMenu{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin:1rem 10px 1rem 10px;
-}
-
-.header .menu .listMenu .btnDownload{
-    font-family: Nunito;
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px 32px;
-    background: #000000;
-    border-radius: 8px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.header .menu .listMenu a{
-    font-family: Nunito;
-    width: 210px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    line-height: 23px;
-    color: #000000;
-    text-decoration: none;
-}
-
-.header .menu .listMenu a li{
-    list-style: none;
-}
 
 
 
