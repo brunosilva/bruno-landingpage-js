@@ -137,7 +137,44 @@ divSectionInsta.appendChild(divContainer);
 //---------------------------------------------END CAROUSEL
 
 
+//---------------------------------------------START PRODUCTS
+divProducts = newElement("divProducts","products","section");
+divContainer = newElement("divContainer","container","div");
+titleSectionProducts = newElement("titleSectionProducts","title","h2");
+titleSectionProducts.innerHTML = "Confira nossos produtos";
+divRowProducts = newElement("divRowProducts","row","div");
+divTxtMessage = newElement("divTxtMessage","message","p");
+divTxtMessage.innerHTML = "<strong>Prenda a atenção de todos</strong> que passam pelas suas postagens nos stories de forma impactante, totalmente criativa, inovadora, com mais filtros, novas fontes, gifs exclusivos e o melhor, de uma forma <strong>100% online e 100% gratuita!</strong>";
+
+divBtnContent = newElement("divBtnContent","btnContentFree","a");
+divBtnContent.innerHTML = "acesse conteÚdo grátis";
+
+divContainer.appendChild(titleSectionProducts);
+divContainer.appendChild(divTxtMessage);
+divContainer.appendChild(divBtnContent);
+divProducts.appendChild(divContainer);
+//---------------------------------------------END PRODUCTS
+
+
+//---------------------------------------------START LEARNING
+divStartLearning = newElement("divStartLearning","start-learning","section");
+divContainer = newElement("divContainer","container","div");
+titleSectionStartLearning = newElement("titleSectionStartLearning","title","h2");
+titleSectionStartLearning.innerHTML = "Comece a aprender agora com conteúdo gratuito e exclusivo.";
+
+divBtnStartLearning = newElement("divBtnStartLearning","btnStartLearning","a");
+divBtnStartLearning.innerHTML = "faça o download";
+
+divContainer.appendChild(titleSectionStartLearning);
+divContainer.appendChild(divBtnStartLearning);
+divStartLearning.appendChild(divContainer);
+//---------------------------------------------END LEARNING
+
+
+
 body.appendChild(header);
 body.appendChild(divFullbanner);
 body.appendChild(divRules);
 body.appendChild(divSectionInsta);
+body.appendChild(divProducts);
+body.appendChild(divStartLearning);

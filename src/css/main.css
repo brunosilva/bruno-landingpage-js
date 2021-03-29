@@ -241,3 +241,79 @@ body{
 .container .carousel .slick-dots li button:before{
     font-size: 20px !important;
 }
+
+/*------------------------------ products */
+.products{
+    background: #F9F7F0;
+    padding: 80px 0;
+}
+
+.products .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.products .container .title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.products .container p{
+    width: 486px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.products .container .btnContentFree{
+    padding: 11px 32px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*------------------------------ start learning */
+.start-learning{
+    padding: 80px 0;
+    background-color: #F9BE00;
+}
+
+.start-learning .container{
+    text-align: center;
+}
+
+.start-learning .container h2{
+    width: 620px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.start-learning .container .btnStartLearning{
+    padding: 11px 32px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
