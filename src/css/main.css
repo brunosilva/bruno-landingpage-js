@@ -3,6 +3,16 @@ body{
     margin: 0;
 }
 
+/*------------------------------ default */
+.btnDefaultBlack{
+    padding: 11px 32px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 /*------------------------------ header */
 .header{
     display: flex;
@@ -275,15 +285,6 @@ body{
     margin-bottom: 40px;
 }
 
-.products .container .btnContentFree{
-    padding: 11px 32px;
-    background: #000000;
-    color: #ffffff;
-    border-radius: 8px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
 /*------------------------------ start learning */
 .start-learning{
     padding: 80px 0;
@@ -294,7 +295,7 @@ body{
     text-align: center;
 }
 
-.start-learning .container h2{
+.start-learning .container .title{
     width: 620px;
     font-family: Ubuntu;
     font-style: normal;
@@ -305,15 +306,5 @@ body{
     align-items: center;
     text-align: center;
     color: #000000;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
-.start-learning .container .btnStartLearning{
-    padding: 11px 32px;
-    background: #000000;
-    color: #ffffff;
-    border-radius: 8px;
-    text-transform: uppercase;
-    cursor: pointer;
+    margin: 0 auto 40px;
 }
