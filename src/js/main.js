@@ -1,7 +1,7 @@
 const body = document.getElementById("body");
 
 //data
-const itensMenu = ['download'];
+const itensMenu = ['download', 'contact'];
 const iconsRules = [
     {icon: 'src/img/landing-page/ghost.gif', text: 'Truques de stories'},
     {icon: 'src/img/landing-page/lightning.gif', text: 'Novos filtros e fontes'},
@@ -30,10 +30,11 @@ headerContainer = newElement("headerContainer","container","div");
 //create element Logo
 logo = newElement("logo","logo","div");
 imgLogo = newElement("imgLogo","","img");
-imgLogo.src = "src/img/9storm.png";
+imgLogo.src = "src/img/logo-black.png";
 
 //create element Menu e List Menu
-menu = newElement("menu","menu","div")
+menu = newElement("menu","menu","div");
+menu.setAttribute("id", "menu");
 listMenu = newElement("listMenu","listMenu","ul");
 
 //"for" to append list of itens of menu
@@ -201,7 +202,7 @@ for(var i = 0; i < socialMedia.length; i++){
 }
 
 imgLogoFooter = newElement("imgLogoFooter","logo-footer","img")
-imgLogoFooter.src = "src/img/9storm-v2.png";
+imgLogoFooter.src = "src/img/logo-yellow.png";
 divSocialMedia.appendChild(imgLogoFooter    );
 
 footerContainer.appendChild(divNameRights);

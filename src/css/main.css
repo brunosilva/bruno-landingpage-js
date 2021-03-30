@@ -276,6 +276,10 @@ body{
     color: #ffffff;
 }
 
+.footer .container .social-media .logo-footer{
+    width: 110px;
+    margin-left: 55px;
+}
 .footer .container .social-media .item-footer i{
     margin-right: 5px;
     font-size: 22px;
