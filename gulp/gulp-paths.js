@@ -27,13 +27,6 @@ module.exports = {
         dist: `${paths.dist}/${paths.css}`,
         filename: 'header.css' 
       }
-    },
-    checkout: {
-      scss: {
-        src: `${paths.src}/${paths.scss}/checkout/module.scss`,
-        dist: `${paths.dist}/${paths.css}`,
-        filename: 'checkout.css' 
-      }
     }
   },
   clonePathsAndFiles: [
