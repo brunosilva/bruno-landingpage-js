@@ -59,8 +59,9 @@
             }
         }
 
-        ul.listMenu{
-            position: absolute;
+        ul.menu-opened{
+            display: flex !important;
+            position: fixed;
             width: 100vw;
             height: 100%;
             left: 0;

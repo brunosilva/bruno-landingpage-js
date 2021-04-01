@@ -24,13 +24,13 @@ function isMobile(){
 };
 
 function openMenu() {
-  var elementItem = document.querySelector("#menu > ul.listMenu");
-  elementItem.style.display = "block";
+  var elementItem = document.querySelector("#listMenu");
+  elementItem.classList.add("menu-opened");
 }
 
 function closeMenu() {
-  var elementItem = document.querySelector("#menu > ul.listMenu");
-  elementItem.style.display = "none";
+  var elementItem = document.querySelector("#listMenu");
+  elementItem.classList.remove("menu-opened");
 }
 
 $(document).ready(function () {
@@ -53,10 +53,16 @@ $(document).ready(function () {
     autoplay:true,
     slidesToScroll: 1,
   });
-  
+
+  if(isMobile() == "desktop"){
+    var rowBtnClose = document.querySelector("#row-icon-close");
+    rowBtnClose.style.display = "none";
+
+  };
+
   if(isMobile() == "smartphone" || isMobile() == "tablet"){
     var element = document.querySelector("#menu");
-    var elementItem = document.querySelector("#menu > ul.listMenu");
+    var elementItem = document.querySelector("#listMenu");
     elementItem.style.display = "none";
 
     hamburguer = newElement("hamburguer","fas fa-bars fa-2x","i");

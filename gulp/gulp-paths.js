@@ -41,6 +41,34 @@ module.exports = {
         dist: `${paths.dist}/${paths.css}`,
         filename: 'rule.css' 
       }
+    },
+    instagran: {
+      scss: {
+        src: `${paths.src}/${paths.scss}/instagran/module.scss`,
+        dist: `${paths.dist}/${paths.css}`,
+        filename: 'instagran.css' 
+      }
+    },
+    products: {
+      scss: {
+        src: `${paths.src}/${paths.scss}/products/module.scss`,
+        dist: `${paths.dist}/${paths.css}`,
+        filename: 'products.css' 
+      }
+    },
+    startLearning: {
+      scss: {
+        src: `${paths.src}/${paths.scss}/start-learning/module.scss`,
+        dist: `${paths.dist}/${paths.css}`,
+        filename: 'start-learning.css' 
+      }
+    },
+    footer: {
+      scss: {
+        src: `${paths.src}/${paths.scss}/footer/module.scss`,
+        dist: `${paths.dist}/${paths.css}`,
+        filename: 'footer.css' 
+      }
     }
   },
   clonePathsAndFiles: [

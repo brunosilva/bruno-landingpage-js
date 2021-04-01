@@ -36,6 +36,7 @@ imgLogo.src = "src/img/logo-black.png";
 menu = newElement("menu","menu","div");
 menu.setAttribute("id", "menu");
 listMenu = newElement("listMenu","listMenu","ul");
+listMenu.setAttribute("id","listMenu");
 
     divRowClose = newElement("divRowClose","row-icon-close","div");
     divRowClose.setAttribute("id","row-icon-close");
@@ -47,7 +48,7 @@ listMenu = newElement("listMenu","listMenu","ul");
 //"for" to append list of itens of menu
 for(var i = 0; i < itensMenu.length; i++){
     link = newElement("link","linkItem","a");
-    link.setAttribute("href", itensMenu[i].toLowerCase());
+    link.setAttribute("href", "javascript:void(0)");
     li = newElement("li","item","li");
     span = newElement("span","","span");
     span.innerHTML = itensMenu[i];
@@ -92,6 +93,7 @@ txtSecond.innerHTML = "Aumente seguidores, faça melhores postagens, construa um
 
 btnDownloadBanner = newElement("btnDownloadBanner","btnBanner","a")
 btnDownloadBanner.innerHTML = "Faça download";
+btnDownloadBanner.setAttribute("href", "javascript:void(0)");
 
 boxMessage.appendChild(smallTxtDownload);
 boxMessage.appendChild(txtPrincipal);
@@ -161,6 +163,7 @@ divTxtMessage.innerHTML = "<strong>Prenda a atenção de todos</strong> que pass
 
 divBtnContent = newElement("divBtnContent","btnDefaultBlack","a");
 divBtnContent.innerHTML = "acesse conteÚdo grátis";
+divBtnContent.setAttribute("href", "javascript:void(0)");
 
 divContainer.appendChild(titleSectionProducts);
 divContainer.appendChild(divTxtMessage);
@@ -177,6 +180,7 @@ titleSectionStartLearning.innerHTML = "Comece a aprender agora com conteúdo gra
 
 divBtnStartLearning = newElement("divBtnStartLearning","btnDefaultBlack","a");
 divBtnStartLearning.innerHTML = "faça o download";
+divBtnStartLearning.setAttribute("href", "javascript:void(0)");
 
 divContainer.appendChild(titleSectionStartLearning);
 divContainer.appendChild(divBtnStartLearning);

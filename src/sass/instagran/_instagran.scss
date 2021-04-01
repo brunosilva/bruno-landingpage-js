@@ -1,0 +1,48 @@
+.imagens-insta {
+    padding: 0 0 50px 0;
+
+    .container {
+        .carousel {
+            .slick-list .slick-slide div div{
+                display: flex !important;
+                justify-content: center;
+            }
+
+            .slick-prev, .slick-next{
+                font-size: 0;
+                line-height: 0;
+                position: absolute;
+                top: 50%;
+                display: block;
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                -webkit-transform: translate(0, -50%);
+                -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                cursor: pointer;
+                color: transparent;
+                border: none;
+                outline: none;
+                background: black;
+                border-radius: 50%;
+            }
+
+            .slick-prev:before, .slick-next:before{
+                line-height: 5px !important;
+            }
+
+            .slick-dots li button:before{
+                font-size: 20px !important;
+            }
+
+            .slick-prev {
+                left: -13px;
+            }
+
+            .slick-next {
+                right: -15px;
+            }
+        }
+    }
+}
