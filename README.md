@@ -4,7 +4,7 @@
 
 Create landing page using only javscript. All elements were created using javascript
 
-Obs: This layout is from bootcamp and some frined of UX/UI who created. I only using to easyly my learning.
+Obs: This layout is from bootcamp and friends of UX/UI who created. I only using to easyly my learning, but i was in team of this people who created the layout
 
 ### 1° stage
 
