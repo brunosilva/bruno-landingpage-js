@@ -27,6 +27,20 @@ module.exports = {
         dist: `${paths.dist}/${paths.css}`,
         filename: 'header.css' 
       }
+    },
+    banner: {
+      scss: {
+        src: `${paths.src}/${paths.scss}/banner/module.scss`,
+        dist: `${paths.dist}/${paths.css}`,
+        filename: 'banner.css' 
+      }
+    },
+    rule: {
+      scss: {
+        src: `${paths.src}/${paths.scss}/rule/module.scss`,
+        dist: `${paths.dist}/${paths.css}`,
+        filename: 'rule.css' 
+      }
     }
   },
   clonePathsAndFiles: [

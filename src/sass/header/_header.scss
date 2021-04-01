@@ -58,5 +58,51 @@
                 }
             }
         }
+
+        ul.listMenu{
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            left: 0;
+            top: 0;
+            margin: 0 !important;
+            justify-content: flex-start !important;
+            padding: 20px !important;
+            z-index: 9;
+            background-color: #F9BE00;
+            flex-direction: column;
+
+            @media screen and (max-width: 768px){
+                a.linkItem{
+                    display: flex !important;
+                    justify-content: flex-start !important;
+                    align-items: center !important;
+                    margin-bottom: 15px;
+                    font-size: 25px;
+                    width: 100%;
+                    padding: 0 20px;
+                }
+                
+                .linkItem.btnDownload{
+                    margin: 0 auto;
+                    width: 100%;
+                    margin-bottom: 100px;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    padding: 16px 20px;
+                }
+            }
+
+            .row-icon-close{
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 25px;
+                    margin-left: 25px;
+                    margin-bottom: 50px;
+                }
+            }
+        }
     }
 }

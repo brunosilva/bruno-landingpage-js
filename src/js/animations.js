@@ -23,9 +23,28 @@ function isMobile(){
   }
 };
 
+function openMenu() {
+  var elementItem = document.querySelector("#menu > ul.listMenu");
+  elementItem.style.display = "block";
+}
+
+function closeMenu() {
+  var elementItem = document.querySelector("#menu > ul.listMenu");
+  elementItem.style.display = "none";
+}
+
 $(document).ready(function () {
+  var quantityCarousel;
+  if(isMobile() == "smartphone"){
+    quantityCarousel = 1;
+  } else if(isMobile() == "tablet"){
+    quantityCarousel = 2;
+  } else{
+    quantityCarousel = 4;
+  }
+
   $('.carousel').slick({
-    slidesToShow: 4,
+    slidesToShow: quantityCarousel,
     dots: true,
     infinite: true,
     speed: 500,
@@ -42,13 +61,8 @@ $(document).ready(function () {
 
     hamburguer = newElement("hamburguer","fas fa-bars fa-2x","i");
     hamburguer.setAttribute("id", "menuHamburguer");
-    
+    hamburguer.setAttribute("onclick", "openMenu()");
     element.appendChild(hamburguer);
-
-    console.log(element);
-    // hamburguer.addEventListener("click", {
-    //   console.log("click ok no menu hamburguer");
-    // });
   };
 
 });

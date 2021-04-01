@@ -37,6 +37,13 @@ menu = newElement("menu","menu","div");
 menu.setAttribute("id", "menu");
 listMenu = newElement("listMenu","listMenu","ul");
 
+    divRowClose = newElement("divRowClose","row-icon-close","div");
+    divRowClose.setAttribute("id","row-icon-close");
+    divRowClose.setAttribute("onclick", "closeMenu()");
+    iconClose = newElement("iconClose","fas fa-times fa-2x","i")
+    divRowClose.appendChild(iconClose);
+    listMenu.appendChild(divRowClose);
+
 //"for" to append list of itens of menu
 for(var i = 0; i < itensMenu.length; i++){
     link = newElement("link","linkItem","a");
