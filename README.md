@@ -21,3 +21,6 @@ Implementing Gulp and SASS
 ### 4° stage
 
 Adjusts responsive layout
+
+
+[Bruno Silva](https://www.linkedin.com/in/bruno-silva0109/)
