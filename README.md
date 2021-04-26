@@ -23,9 +23,9 @@ Implementing Gulp and SASS
 Adjusts responsive layout
 
 
-![desktop](https://github.com/brunosilva/bruno-landingpage-js/issues/1#issue-850302769)
+![desktop](https://github.com/brunosilva/bruno-landingpage-js/blob/6252c0f3b30549934689eb56688c1005976efa6f/screenshot/desktop.png)
 
-![mobile](https://github.com/brunosilva/bruno-landingpage-js/issues/2#issue-850303782)
+![mobile](https://github.com/brunosilva/bruno-landingpage-js/blob/6252c0f3b30549934689eb56688c1005976efa6f/screenshot/mobile.png)
 
 
 
